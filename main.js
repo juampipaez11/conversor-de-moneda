@@ -55,6 +55,7 @@ function mostrarResultado(resultado, monedaDestino) {
   alert('El resultado de la conversión es: ' + resultado + ' ' + monedaDestino);
 }
 
+
 function operarResultado(resultado, monedaDestino) {
   const opcionesOperacion = ['Sumar', 'Restar', 'Multiplicar', 'Dividir'];
   let operacion;
@@ -82,6 +83,7 @@ function operarResultado(resultado, monedaDestino) {
   if (!operacion) {
     return resultado;
   }
+
 
   let nuevoResultado;
   if (operacion === 'Sumar') {
@@ -115,6 +117,7 @@ function operarResultado(resultado, monedaDestino) {
   return nuevoResultado;
 }
 
+
 function convertir() {
   const { pesos, monedaDestino } = capturarEntradas();
   const resultado = realizarOperacion(pesos, monedaDestino);
@@ -126,7 +129,7 @@ function convertir() {
 
 window.addEventListener('load', function() {
   const btnConvertir = document.getElementById('btnConvertir');
-  btnConvertir.addEventListener('click', convertir);
+  btnConvertir.addEventListener('click', convertir); 
 });
 
 
