@@ -101,6 +101,7 @@ document.getElementById('btnSumar').addEventListener('click', function() {
     mostrarMensaje('Debe ingresar una cantidad de pesos válida.', 'error');
     return;
   }
+  
   const nuevoResultado = sumarPesos(pesos);
   mostrarResultadoEnHTML(nuevoResultado, 'Pesos Argentinos');
   agregarAlHistorial('Suma', pesos, 'Pesos Argentinos', 'Pesos Argentinos', nuevoResultado);
@@ -112,10 +113,14 @@ document.getElementById('btnRestar').addEventListener('click', function() {
     mostrarMensaje('Debe ingresar una cantidad de pesos válida.', 'error');
     return;
   }
+
   const nuevoResultado = restarPesos(pesos);
   mostrarResultadoEnHTML(nuevoResultado, 'Pesos Argentinos');
   agregarAlHistorial('Resta', pesos, 'Pesos Argentinos', 'Pesos Argentinos', nuevoResultado);
 });
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -42,7 +41,7 @@ body {
   
   button {
     display: inline-block;
-    width: 45%; /* Reducimos el ancho para que estén en paralelo */
+    width: 45%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -51,11 +50,11 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    margin-right: 5px; /* Agregamos un margen derecho para separarlos */
+    margin-right: 5px;
   }
   
   button:last-child {
-    margin-right: 0; /* Quitamos el margen derecho del último botón */
+    margin-right: 0;
   }
   
   button:hover {
