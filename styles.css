@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container,
+  .select-container {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    display: inline-block;
+    width: 45%; /* Reducimos el ancho para que estén en paralelo */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 5px; /* Agregamos un margen derecho para separarlos */
+  }
+  
+  button:last-child {
+    margin-right: 0; /* Quitamos el margen derecho del último botón */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .resultado-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .operacion-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .historial-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .historial-container li {
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  

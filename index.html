@@ -1,17 +1,71 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>conversor de moneda</title>
+  <title>Conversor de Moneda</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  
-  <h1>Conversor de Moneda</h1
-    >
-  <button onclick="convertir()">Convertir</button>
-  
-  <script src="./main.js"></script>
+  <div class="container">
+    <h1>Conversor de Moneda</h1>
+    <div class="input-container">
+      <label for="inputPesos">Ingrese la cantidad de pesos argentinos:</label>
+      <input type="text" id="inputPesos" placeholder="Ingrese la cantidad de pesos">
+    </div>
+    <div class="select-container">
+      <label for="selectMoneda">Seleccione la moneda a la que desea convertir:</label>
+      <select id="selectMoneda">
+        <option value="" disabled selected>Seleccione una moneda</option>
+        <option value="Dólar">Dólar</option>
+        <option value="Euro">Euro</option>
+        <option value="Libra">Libra</option>
+      </select>
+    </div>
+    <button id="btnConvertir">Convertir</button>
+    <div class="resultado-container">
+      <h2>Resultado</h2>
+      <p id="resultado"></p>
+    </div>
 
+    <div class="operacion-container">
+      <h2>Sumar / Restar</h2>
+      <div class="input-container">
+        <label for="inputSumarRestar">Ingrese la cantidad de pesos a sumar o restar:</label>
+        <input type="text" id="inputSumarRestar" placeholder="Ingrese la cantidad a sumar o restar">
+      </div>
+      <button id="btnSumar">Sumar</button>
+      <button id="btnRestar">Restar</button>
+    </div>
+
+    <div class="historial-container">
+      <h2>Historial</h2>
+      <ul id="historial"></ul>
+    </div>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
